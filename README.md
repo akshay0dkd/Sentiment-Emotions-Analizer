@@ -188,3 +188,5 @@ py -3.13 -m pytest tests/ -v
 
 ## 📜 11. License
 Academic Open-Source DRTM / Text Mining Project.
+#   S e n t i m e n t - E m o t i o n s - A n a l i z e r  
+ 
