@@ -12,12 +12,29 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
-# Ensure required NLTK resources are available
+import os
+import warnings
+
+# Suppress NLTK world-writable warnings on cloud containers
+warnings.filterwarnings('ignore', category=UserWarning, module='nltk')
+
+# Ensure required NLTK resources are available in a safe private user directory
 def _download_nltk_resources():
+    try:
+        nltk_data_dir = os.path.expanduser('~/nltk_data')
+        os.makedirs(nltk_data_dir, exist_ok=True)
+        if nltk_data_dir not in nltk.data.path:
+            nltk.data.path.insert(0, nltk_data_dir)
+    except Exception:
+        nltk_data_dir = None
+
     resources = ['punkt', 'punkt_tab', 'stopwords', 'wordnet', 'omw-1.4']
     for resource in resources:
         try:
-            nltk.download(resource, quiet=True)
+            if nltk_data_dir:
+                nltk.download(resource, download_dir=nltk_data_dir, quiet=True)
+            else:
+                nltk.download(resource, quiet=True)
         except Exception:
             pass
 

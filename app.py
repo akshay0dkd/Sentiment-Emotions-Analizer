@@ -500,7 +500,7 @@ if st.session_state.last_analysis:
         else:
             st.info("No Unicode emojis were detected in the input text.")
 
-    # TAB 5: How The Models Work (Viva & Academic Theory)
+    # TAB 5: How The Models Work (Academic Theory)
     with tab_theory:
         st.markdown("### 🤖 Architecture & Theoretical Foundations")
         
@@ -538,7 +538,7 @@ if st.session_state.last_analysis:
         """)
 
         st.markdown("""
-        #### 3. Key Limitations to Note for Viva
+        #### 3. Key Limitations to Note 
         - **Sarcasm & Irony:** Sarcasm often uses positive words in negative contexts without overt lexical cues.
         - **Cross-Lingual Code-Switching:** English-specific models may misclassify multilingual idioms.
         - **Contrastive Aspects:** Sentences like *"The camera is great but the battery is terrible"* span multiple aspects and require aspect-based sentiment breakdown.

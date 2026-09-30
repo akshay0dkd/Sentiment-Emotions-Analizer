@@ -29,7 +29,7 @@ MODEL_METADATA = {
         "huggingface_id": EMOTION_MODEL_ID,
         "architecture": "DistilRoBERTa (6-layer, 768-hidden, 12-heads, 82M parameters)",
         "pretraining": "Fine-tuned on 6 benchmark emotion datasets (Ekman basic emotions + Neutral)",
-        "labels": ["anger", "disgust", "fear", "joy", "neutral", "sadness", "surprise",'frustrated','excited','bored','confused'],
+        "labels": ["anger", "disgust", "fear", "joy", "neutral", "sadness", "surprise"],
         "display_labels": {
             "anger": "Anger",
             "disgust": "Disgust",
@@ -38,11 +38,6 @@ MODEL_METADATA = {
             "neutral": "Neutral",
             "sadness": "Sadness",
             "surprise": "Surprise"
-            "frustrated": "Frustrated",
-            "excited": "Excited",
-            "bored": "Bored",
-            "confused": "Confused", 
-
         },
         "domain": "Emotion detection in conversational, user reviews, and emotional expressions",
         "limitations": "Nuanced emotions (e.g., bittersweetness, envy) mapped to nearest Ekman class"
