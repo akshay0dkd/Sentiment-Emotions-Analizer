@@ -1,0 +1,10 @@
+streamlit>=1.35.0
+torch>=2.2.0
+transformers>=4.40.0
+scikit-learn>=1.4.0
+nltk>=3.8.1
+emoji>=2.10.0
+pandas>=2.2.0
+numpy>=1.26.0
+plotly>=5.20.0
+pytest>=8.0.0

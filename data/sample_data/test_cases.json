@@ -1,0 +1,66 @@
+[
+  {
+    "category": "Positive",
+    "label": "Product Praise",
+    "text": "I absolutely love this product! It exceeded all my expectations and customer support was wonderful. 😍❤️🔥",
+    "expected_sentiment": "Positive",
+    "expected_emotion": "Joy",
+    "notes": "Strong positive lexical cues and positive emojis."
+  },
+  {
+    "category": "Negative",
+    "label": "Service Outrage",
+    "text": "This service is horrible, completely unacceptable, and customer care was rude and useless! 😡🤬",
+    "expected_sentiment": "Negative",
+    "expected_emotion": "Anger",
+    "notes": "Intense negative cues and angry emojis."
+  },
+  {
+    "category": "Neutral",
+    "label": "Factual / Schedule",
+    "text": "The quarterly project review meeting is scheduled for tomorrow at 10:00 AM in Conference Room 3B.",
+    "expected_sentiment": "Neutral",
+    "expected_emotion": "Neutral",
+    "notes": "Objective information without emotional or polarity tokens."
+  },
+  {
+    "category": "Sadness",
+    "label": "Disappointment & Grief",
+    "text": "I feel so heartbroken and deeply sad today after hearing the terrible news... 😢💔",
+    "expected_sentiment": "Negative",
+    "expected_emotion": "Sadness",
+    "notes": "Sadness lexicon and broken heart emoji."
+  },
+  {
+    "category": "Sarcasm",
+    "label": "Sarcastic Delay Complaint",
+    "text": "Great, another two hour flight delay... absolutely wonderful airline service. 🙃",
+    "expected_sentiment": "Negative / Sarcastic",
+    "expected_emotion": "Annoyance / Disgust",
+    "notes": "Demonstrates sarcasm challenge where positive words are used in negative context."
+  },
+  {
+    "category": "Mixed",
+    "label": "Contrastive Review",
+    "text": "The camera hardware and display are fantastic, but the battery life and heating issues are terrible.",
+    "expected_sentiment": "Mixed",
+    "expected_emotion": "Mixed / Neutral",
+    "notes": "Contains contrastive conjunction 'but' connecting positive and negative aspects."
+  },
+  {
+    "category": "Emoji-heavy",
+    "label": "Pure Emoji Expression",
+    "text": "😍❤️🔥🙌🎉💯✨",
+    "expected_sentiment": "Positive",
+    "expected_emotion": "Joy / Admiration",
+    "notes": "Tests emoji-only input processing and Unicode extraction."
+  },
+  {
+    "category": "Social Media",
+    "label": "Slang & Elongated Words",
+    "text": "OMG this concert was sooo insane and crazyyy good!!! @bandName rocked #LiveMusic 🔥🔥",
+    "expected_sentiment": "Positive",
+    "expected_emotion": "Surprise / Joy",
+    "notes": "Tests hashtag, mention, and elongated word handling."
+  }
+]

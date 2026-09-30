@@ -1,0 +1,11 @@
+text,sentiment,emotion
+"I absolutely love this product! It exceeded all my expectations.",Positive,Joy
+"This service is horrible, completely unacceptable, and rude.",Negative,Anger
+"The project review meeting is scheduled for tomorrow at 10 AM.",Neutral,Neutral
+"I feel so heartbroken and deeply sad today after hearing the news.",Negative,Sadness
+"Great, another two hour flight delay... wonderful service.",Negative,Disgust
+"The camera is fantastic, but the battery life is terrible.",Mixed,Neutral
+"OMG this concert was sooo good and energetic!!!",Positive,Surprise
+"I am terrified of what might happen next in this crisis.",Negative,Fear
+"The packaging arrived completely crushed and ruined.",Negative,Anger
+"Such a pleasant morning walk in the botanical garden.",Positive,Joy
